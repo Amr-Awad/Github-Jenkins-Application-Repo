@@ -15,7 +15,7 @@ FROM eclipse-temurin:17-jre-alpine AS runtime
 WORKDIR /app
 
 # Copy only the built JAR to reduce image size
-COPY --from=builder /app/build/libs/*.jar app.jar
+COPY --from=builder /app/build/libs/demo-0.0.1-SNAPSHOT.jar app.jar
 
 # Run the application
 CMD ["java", "-jar", "app.jar"]
