@@ -8,7 +8,7 @@ pipeline {
         DOCKERHUB_CREDENTIALS = credentials('docker_token')
         GIT_CREDENTIALS = credentials('github_token')
         DOCKER_IMAGE = "amrawad12/my-springboot-app"
-        MANIFEST_REPO = "git@github.com:Amr-Awad/jenkins_updateManifest.git"
+        MANIFEST_REPO = "https://github.com/Amr-Awad/jenkins_updateManifest.git"
         JAR_FILE = "./build/libs/demo-0.0.1-SNAPSHOT.jar"
     }
     stages {
